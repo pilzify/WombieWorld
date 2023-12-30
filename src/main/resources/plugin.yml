@@ -1,0 +1,4 @@
+name: WombieWorld
+version: '${project.version}'
+main: net.pilzify.wombieworld.WombieWorld
+api-version: '1.20'
