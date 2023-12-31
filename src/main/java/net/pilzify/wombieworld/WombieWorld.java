@@ -9,7 +9,7 @@ public final class WombieWorld extends JavaPlugin {
     @Override
     public void onEnable() {
         // Plugin startup logic
-        System.out.println("hello world123");
+        System.out.println("hello world123456");
     }
 
     @Override
