@@ -1,5 +1,7 @@
 package net.pilzify.wombieworld.entities;
 
+import org.bukkit.Location;
+
 public interface Spawnable {
-    void spawn(int x, int y, int z);
+    void spawn(Location location);
 }

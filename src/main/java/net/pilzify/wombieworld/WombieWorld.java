@@ -2,14 +2,15 @@ package net.pilzify.wombieworld;
 
 import org.bukkit.plugin.java.JavaPlugin;
 
-import java.util.ArrayList;
-
 public final class WombieWorld extends JavaPlugin {
+    public static WombieWorld instance;
+    public static WombieWorld getInstance(){return instance;}
 
     @Override
     public void onEnable() {
         // Plugin startup logic
         System.out.println("hello world123456");
+        instance = this;
     }
 
     @Override
