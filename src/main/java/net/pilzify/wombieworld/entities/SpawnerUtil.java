@@ -1,11 +1,10 @@
 package net.pilzify.wombieworld.entities;
 
 import net.pilzify.wombieworld.WombieWorld;
-import net.pilzify.wombieworld.utils.Millis;
 import org.bukkit.Location;
 import org.bukkit.scheduler.BukkitRunnable;
 
-public class Spawner {
+public class SpawnerUtil {
     private final WombieWorld plugin = WombieWorld.getInstance();
     private boolean active = true;
     private int count = 0;

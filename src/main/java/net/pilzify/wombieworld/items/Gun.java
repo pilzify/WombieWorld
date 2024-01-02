@@ -11,11 +11,11 @@ public class Gun {
 
     private Gun(){}
 
-    private static ItemStack holGun(){
+    private static ItemStack getGun(){
         return new CustomItemUtil().createItem(Material.WOODEN_HOE, "Gun").setUnbreakable(true).getItem();
     }
 
-    private static shoot(){
+    private static void shoot(){
 
     }
 

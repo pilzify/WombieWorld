@@ -9,6 +9,7 @@ public class CustomItem {
     private CustomItem(){}
 
     public static final ItemStack EXAMPLE_ITEM = getExampleItem();
+    public static final ItemStack DEFAULT_SPAWNER = getDefaultSpawner();
 
     private static ItemStack getExampleItem(){
         return new CustomItemUtil().createItem(Material.IRON_AXE, ChatColor.RED + "The cleaver")
@@ -16,5 +17,9 @@ public class CustomItem {
                 .setUnbreakable(true)
                 .setLore("Cleave all the zombies!!!")
                 .getItem();
+    }
+    private static ItemStack getDefaultSpawner(){
+        return new CustomItemUtil().createItem(Material.ZOMBIE_SPAWN_EGG, ChatColor.DARK_GREEN + "Default spawner")
+                .addEnchantGlint().getItem();
     }
 }

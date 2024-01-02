@@ -50,6 +50,12 @@ public class CustomItemUtil {
         this.item.setItemMeta(this.meta);
         return this;
     }
+    public CustomItemUtil addLore(String loreString){
+        this.lore.add(loreString);
+        this.meta.setLore(this.lore);
+        this.item.setItemMeta(this.meta);
+        return this;
+    }
     public CustomItemUtil addEnchant(Enchantment enchantment, int level, boolean ignoreVanillaRestrictions){
         this.meta.addEnchant(enchantment,level,ignoreVanillaRestrictions);
         this.item.setItemMeta(this.meta);
@@ -79,4 +85,6 @@ public class CustomItemUtil {
 
 
     public List<String> getLore() {return this.lore;}
+
+    public String getName() {return this.meta.getDisplayName();}
 }
